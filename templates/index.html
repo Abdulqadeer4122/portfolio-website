@@ -1,0 +1,138 @@
+{% include 'header.html'%}
+{% block title%}<title>home</title>{% endblock%}
+{% block style%}
+<link rel="stylesheet" href=".static/styles.css">
+{% endblock%}
+{%block content%}
+<main class="py-0">
+    <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <img class="bd-placeholder-img" width="100%" height="100%" src="./static/images/bg.jpg" aria-hidden="true" >
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>I am Abdul Qadeer</h1>
+            <h5><b>I am a Python Developer with flask and django Frameworks .</b></h5>
+            <p><a class="btn btn-lg btn-primary" href="{{url_for('about')}}">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </div>
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom" style="center">Skills</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col pdy-3">
+
+        <h3 class="fs-2 text-body-emphasis heading3">Python Programming</h3>
+        <p>I love programming with python and i can build various project.</p>
+        <p>The things that i can do </p>
+        <ul class="pdy-1">
+          <li>Python Sever for Flask</li>
+          <li>WTF Forms</li>
+          <li>SQLITE With SQLAlCHEMY</li>
+          <li>Tkinter </li>
+          <li>Turtle </li>
+          <li>Git</li>
+          <li>Github</li>
+        </ul>
+
+      </div>
+      <div class="feature col pdy-3">
+
+        <h3 class="fs-2 text-body-emphasis heading3">Frontend Design</h3>
+        <p>I can make frontend with scratch and make interactive design for my client.</p>
+        <p>The things that i can do </p>
+        <ul class="pdy-3">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>JINJA</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+      <div class="feature col pdy-3">
+        <h3 class="fs-2 text-body-emphasis heading3">Experience</h3>
+        <p>I genuinely care about client and love helping fellow developer work on their craft.</p>
+        <p>1 Year Experience </p>
+        <ul class="pdy-1">
+          <li>Web Development </li>
+          <li>Desktop Apps With Tkinter</li>
+          <li>Small Games With Turtle</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./static/images/python-developer.png" alt="" width="200px" height="200px">
+    <h1 class="display-5 fw-bold text-body-emphasis">Python Developer</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Analytical, motivated and hard-working Python Developer with over five years of experience designing, debugging and troubleshooting applications using Flask and Python coding languages. Hoping to use my advanced development skills to build and enhance banking applications for the finance industry.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <p><a class="btn btn-lg btn-primary" href="{{url_for('contact')}}">Email me</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 py-5 my-5 text-center">
+<h1 class="display-5 fw-bold text-body-emphasis">Recent Work</h1>
+    <div class="py-5 px-5 ">
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+          <div class="card shadow-sm">
+           <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./static/images/blog.jpg" role="img" aria-label="Placeholder: Thumbnail" >
+            <div class="card-body">
+              <p class="card-text"> I created this website recently with python Flask and used sqlite database. In this website anybody can see the blogs but can d the comment after registration. you can run this website by downloading from github </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <p><a class="btn btn-lg btn-primary" href="https://github.com/Abdulqadeer4122/Blog_website">View on github</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./static/images/cofee.jpg" role="img" aria-label="Placeholder: Thumbnail" >
+            <div class="card-body">
+              <p class="card-text">I created this website recently with python Flask and used csv file. I added some data in this file and used this data to display. We can see cafe detail easily. Some important things that I cover in this project are csv file reading. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <p><a class="btn btn-lg btn-primary" href="https://github.com/Abdulqadeer4122/Coffee-collection-web">View on github</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./static/images/passwrd.jpg" role="img" aria-label="Placeholder: Thumbnail" >
+            <div class="card-body">
+              <p class="card-text">I made a password manager by using python and Tkinter through which you can save your different passwords and create new creative passwrd that can never be hacked. You can simply write the name of website and store.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <p><a class="btn btn-lg btn-primary" href="https://github.com/Abdulqadeer4122/Password-Manager">View on github</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+      <a href="{{url_for('portfolio')}}"><h6 class="py-5">View More </h6></a>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+{%endblock%}
+{%include 'footer.html'%}
